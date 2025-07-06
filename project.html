@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="navbar-container">
+    <div class="brand">Portofolio</div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Tentang Saya</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="certificates.html">Sertifikat</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <h2>💻 Proyek & Publikasi</h2>
+    <div class="project-list">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Website Questify (Education Platform)</h3>
+        <div class="project-images">
+          <img src="images/questify1.png" alt="Tampilan Halaman Awal Questify">
+          <img src="images/questify2.png" alt="Tampilan Dashboard Questify">
+        </div>
+        <p>Questify adalah sebuah platform edukasi inovatif untuk anak-anak usia 7-12 tahun (di bawah pengawasan orang tua) yang menggabungkan pendekatan gamifikasi dengan tantangan interaktif dan kuis untuk meningkatkan keterampilan berpikir cepat, pemecahan masalah, dan daya analisis pengguna. Dibangun menggunakan framework Django (Python) sebagai backend utama dan didukung oleh JavaScript, HTML, CSS untuk interaktivitas real-time di sisi frontend.
+        </p>
+        <a href="https://github.com/ReisyeRema/Web_Questify" class="btn" target="_blank">Link Github</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Klinik Sahabat Satwa</h3>
+        <div class="project-images">
+          <img src="images/kss.png" alt="Payroll Dashboard 1">
+          <img src="images/kss2.jpg" alt="Payroll Dashboard 2">
+        </div>
+        <p>Proyek ini merupakan hasil kerja tim dalam pengembangan Sistem Informasi Klinik Sahabat Satwa, sebuah aplikasi web berbasis PHP dan MySQL Workbench. Saya berkontribusi dalam implementasi fitur CRUD, memperbaiki integritas data, dan mengatur hak akses pengguna sesuai materi Administrasi Data. Fokus utama saya adalah memastikan keterpaduan dan keamanan data dalam sistem.</p>
+        <a href="https://drive.google.com/drive/folders/1-136bIW2XbR1CACf3epLQbgnnnG9BoPo" class="btn">Lihat Detail</a>
+      </div>
+
+            <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Website Showroom</h3>
+        <div class="project-images">
+          <img src="images/showroom1.png" alt="Payroll Dashboard 1">
+          <img src="images/showroom2.png" alt="Payroll Dashboard 2">
+        </div>
+        <p>Website Showroom merupakan sistem informasi yang dibangun menggunakan PHP, dilengkapi dengan fitur pencarian berbasis algoritma Perceptron. Fitur ini memungkinkan pengguna memfilter mobil secara efisien berdasarkan budget, merek, dan model, guna mendukung pengalaman pencarian yang lebih akurat dan responsif.</p>
+        <a href="https://drive.google.com/drive/folders/1-95vZRvXuXNTaKBy46v7mqo0_7oRYLhx" class="btn">Lihat Detail</a>
+      </div>
+
+      <!-- Project 4 -->
+          <div class="project-card">
+            <h3>Jurnal "Memperkaya Pemrograman Web Sistem Kasir Dengan Teknologi AI: Implementasi API Gemini</h3>
+            <div class="project-images">
+              <img src="images/jurnal2.png" alt="Tampilan Jurnal Tic Tac Toe AI">
+            </div>
+            <p>Jurnal ini merupakan hasil kolaborasi dalam tim yang bertujuan mengeksplorasi pemanfaatan teknologi kecerdasan buatan (AI) pada sistem kasir berbasis web. Dalam penelitian ini, dilakukan integrasi API Gemini, sebuah layanan AI generatif, untuk memperkaya fitur sistem kasir, seperti otomatisasi  pembuatan  deskripsi  produk.</p>
+            <a href="https://ejournal.itn.ac.id/jati/article/view/9669" target="_blank" class="btn">Link Jurnal</a>
+          </div>
+
+      <!-- Project 5 -->
+        <div class="project-card">
+          <h3>Jurnal "Kecerdasan Buatan dalam Permainan Tic-Tac-Toe Melalui Algoritma Minimax dengan Optimasi Alpha-Beta Pruning"</h3>
+          <div class="project-images">
+            <img src="images/jurnal.png" alt="Tampilan Jurnal Tic Tac Toe AI">
+          </div>
+          <p>Jurnal ini membahas penerapan algoritma Minimax dalam pengembangan kecerdasan buatan (AI) untuk permainan Tic-Tac-Toe, dengan fokus pada optimasi performa menggunakan Alpha-Beta Pruning. Minimax digunakan untuk mensimulasikan langkah terbaik dari pemain dan lawan, sedangkan Alpha-Beta Pruning berfungsi memangkas cabang pencarian yang tidak perlu sehingga proses pengambilan keputusan menjadi lebih efisien. Hasil penelitian menunjukkan bahwa kombinasi kedua teknik ini mampu menciptakan AI yang optimal dan cepat dalam mengambil keputusan, bahkan dalam kondisi permainan yang kompleks.</p>
+          <a href="https://jurnal.polgan.ac.id/index.php/jmp/article/view/13594" target="_blank" class="btn">Link Jurnal</a>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025. All rights reserved.
+  </footer>
+
+  <!-- SCRIPT HAMBURGER MENU -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Tutup menu otomatis setelah klik link (di mobile)
+      const navItems = navLinks.querySelectorAll('a');
+      navItems.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            navLinks.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

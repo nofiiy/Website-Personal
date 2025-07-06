@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Novia Fitriani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+    <div class="navbar-container">
+      <div class="brand">Portofolio</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Tentang Saya</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="certificates.html">Sertifikat</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <div class="container">
+    <div class="profile-container">
+      <img src="images/profile.jpg" alt="Foto Profil" class="profile">
+      <h1>Halo, Saya Novia Fitriani</h1>
+      <p>Saya adalah mahasiswa Teknik Informatika Universitas Palangka Raya angkatan 2022 dengan IPK 3.86. Memiliki kemampuan dalam pemrograman, desain grafis, manajemen waktu, dan bekerja dengan baik pada tim maupun individu. </p>
+    </p>
+    </div>
+
+    <h2>📚 Pendidikan</h2>
+    <ul>
+      <li>S1 Teknik Informatika – Universitas Palangka Raya (Sedang Berjalan)</li>
+    </ul>
+
+    <h2>🤹‍♂️ Keterampilan (Soft Skills)</h2>
+    <ul>
+      <li>Komunikasi Efektif</li>
+      <li>Kepemimpinan dan Manajemen Waktu</li>
+      <li>Problem Solving</li>
+      <li>Bertanggung jawab dan disiplin</li>
+    </ul>
+
+    <h2>🧰 Tools</h2>
+    <div class="tool-icon-grid">
+      <img src="images/laragon.jpg" alt="GitHub" class="tool-icon">
+      <img src="images/vscode.jpg" alt="Elephant / Localhost" class="tool-icon">
+      <img src="images/xampp.png" alt="Microsoft Word" class="tool-icon">
+      <img src="images/mysql-workbench-icon.png" alt="Microsoft Excel" class="tool-icon">
+      <img src="images/excel.jpg" alt="Microsoft Excel" class="tool-icon">
+      <img src="images/msword.jpg" alt="Canva" class="tool-icon">
+      <img src="images/canva-logo.jpg" alt="Canva" class="tool-icon">
+    </div>
+
+    <h2>💻 Bahasa Pemrograman</h2>
+    <div class="tool-icon-grid">
+      <img src="images/html.png" alt="HTML" class="tool-icon">
+      <img src="images/css.jpg" alt="CSS" class="tool-icon">
+      <img src="images/js.png" alt="JavaScript" class="tool-icon">
+      <img src="images/php.png" alt="PHP" class="tool-icon">
+      <img src="images/C++.png" alt="SQL" class="tool-icon">
+      <img src="images/python.jpg" alt="SQL" class="tool-icon">
+    </div>
+
+    <h2>🧩 Framework</h2>
+    <div class="tool-icon-grid">
+      <img src="images/bss.jpg" alt="Bootstrap" class="tool-icon">
+      <img src="images/dj.png" alt="Tailwind CSS" class="tool-icon">
+    </div>
+
+    <h2>🎓 Pelatihan</h2>
+    <ul>
+      <li>
+        Studi Independen Bersertifikat Platform and Web Developer (Specialist Education Platform) – 2024<br>
+        <small><em>MSIB Batch 7 Pada PT Maleo Edukasi Teknologi</em></small>
+      </li>
+      <li>
+        Sertifikasi BNSP Data Management Staff  – 2024<br>
+        <small><em>Difasilitasi oleh Bank Indonesia melalui kegiatan sertifikasi bersama tim asesor dari LSP resmi</em></small>
+      </li>
+      <li>
+       Pelatihan Robotik UKM Sakti – 2022<br>
+        <small><em>UKM Sakti UPR</em></small>
+    </ul>
+
+    <h2>👥 Pengalaman Organisasi</h2>
+    <ul>
+      <li>
+        Anggota Publikasi dan Sosialisasi – Generasi Baru Indonesia (GenBI) Kalimantan Tengah<br>
+        <small><em>
+          • Ketua pelaksana Kreasi Fest, meliputi lomba poster, konten GNPIP, CBP, dan QRIS berhasil menarik pastisipan dengan total 81 peserta di kota Palangka Raya.<br>
+          • Bertanggung jawab atas dokumentasi kegiatan GenBI (foto & video), serta publikasi konten media sosial dengan caption yang menarik.
+        </em></small>
+      </li>
+      <li>
+        Sekretaris Komisi D (Eksternal dan Internal) – Dewan Perwakilan Mahasiswa Universitas Palangka Raya<br>
+        <small><em>
+          • Mengawasi pelaksanaan program kerja dan kebijakan BEM <br>
+          • Menjadi panitia dalam seminar legislatif yang diselenggarakan hasil kolaborasi dengan DPRD  
+          provinsi Kalteng. </em></small>
+      </li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025. All rights reserved.
+  </footer>
+
+  <!-- SCRIPT HAMBURGER MENU -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-info {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: var(--box-shadow);
+    }
+
+    .contact-info p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .contact-info p strong {
+      color: var(--dark);
+    }
+
+    .contact-info p::before {
+      content: "📌 ";
+      margin-right: 5px;
+    }
+
+    .contact-info p a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .contact-info p a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form h2 {
+      margin-bottom: 10px;
+      color: var(--dark);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    form input,
+    form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: 'Segoe UI', sans-serif;
+      width: 100%;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: var(--primary-hover);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="brand">Portofolio</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Tentang Saya</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="certificates.html">Sertifikat</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <h1>📬 Kontak</h1>
+    <p>Silakan hubungi saya melalui informasi berikut atau kirimkan pesan langsung melalui formulir.</p>
+
+    <div class="contact-grid">
+      <!-- INFORMASI KONTAK -->
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:nopia2104@gmail.com">nopia2104@gmail.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/62895419764000" target="_blank">+62 895-4197-64000</a></p>
+        <p><strong>Alamat:</strong> Palangka Raya, Kalimantan Tengah</p>
+      </div>
+
+      <!-- FORMULIR KONTAK -->
+      <form action="https://formsubmit.co/nopia2104@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <h2>📨 Kirim Pesan Langsung</h2>
+        <input type="text" name="name" placeholder="Nama Anda" required />
+        <input type="email" name="email" placeholder="Email Aktif" required />
+        <textarea name="message" placeholder="Tulis pesan Anda..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025. All rights reserved.
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

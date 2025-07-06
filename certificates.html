@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sertifikat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+    <div class="navbar-container">
+      <div class="brand">Portofolio</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Tentang Saya</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="certificates.html">Sertifikat</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>📜 Sertifikat</h1>
+
+    <div class="certificate-gallery">
+      <div class="certificate-item">
+        <img src="images/educourse.jpg" alt="..." class="landscape">
+        <p>Sertifikat penyelesaian program Educourse.id "Platform and Web Developer (Specialist Education Platform)" MSIB Batch-7 – 2024</p>
+      </div>
+      <div class="certificate-item">
+        <img src="images/STEM.jpg" alt="..." class=" landscape">
+        <p>International STEM Endorsed Certificate – 2024</p>
+      </div>
+      <div class="certificate-item">
+        <img src="images/dpm.jpg" alt="..." class="landscape">
+        <p>Penyelenggara Seminar Legislatif Dewan Perwakilan Mahasiswa– 2024</p>
+      </div>
+      <div class="certificate-item">
+        <img src="images/tifest.png"  alt= "..." class="landscape">
+        <p>Panitia Dies Natalis Teknik Informatika – 2023</p>
+      </div>
+      <div class="certificate-item">
+        <img src="images/lp.png" alt="..." class="landscape">
+        <p>Peserta Leadership Pratice Generasi Baru Indonesia – 2024</p>
+      </div>
+      <div class="certificate-item">
+        <img src="images/bnsp.jpg" alt="..." class="portrait">
+        <p>Sertifikat Kompetensi Data Management Staff – 2024</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025. All rights reserved.
+  </footer>
+
+  <!-- SCRIPT: Hamburger menu + deteksi orientasi gambar sertifikat -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    /* ===== HAMBURGER MENU ===== */
+    const menuToggle = document.getElementById("mobile-menu");
+    const navLinks   = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    /* ===== DETEKSI ORIENTASI GAMBAR ===== */
+    document.querySelectorAll(".certificate-item img").forEach((img) => {
+      // Buat objek Image baru supaya properti naturalWidth/Height sudah ter‐load
+      const tmp = new Image();
+      tmp.src   = img.src;
+
+      tmp.onload = () => {
+        if (tmp.naturalHeight > tmp.naturalWidth) {
+          img.classList.add("portrait");
+        } else {
+          img.classList.add("landscape");
+        }
+      };
+    });
+  });
+</script>
+
+
+</body>
+</html>
